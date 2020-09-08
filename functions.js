@@ -16,7 +16,7 @@ $(t).insertBefore($('.box')).css('color','red');*/
 
 //removendo coisas do site
 setTimeout(function(){
-    $('.box').eq(0).remove(); //.eq = se eu tiver mais de um elemento igual, com o eq eu consigo pegar 1 apenas
+    $('.box').remove(); //.eq = se eu tiver mais de um elemento igual, com o eq eu consigo pegar 1 apenas
 },3000);  //definindo quanto tempo vou esperar pra excluir com a funcção de js SetTimeOut
 
 });

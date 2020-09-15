@@ -45,4 +45,20 @@ $('body').click(function(){
     clearInterval(timer); //criei uma variavel timer para poder fazer a ação.
 })*/
 
+//addClass - removeClass e clone
+
+/*$('.box1').addClass('minhaclasse');
+$('.box1').removeClass('minhaclasse');
+
+var el = $('.box1').find('.child1');
+el.css('color','red');
+
+$('minhatag').attr('meuattr','outrovalor');
+alert($('minhatag').attr('meuattr'));//função para pegar atributos*/
+
+var el = $('#source .texto').clone();
+//$('#container').html(el.html());
+//el.appendTo('#container');
+$('#source .texto').appendTo('#container'); //para apenas mover sem clonar
+
 });

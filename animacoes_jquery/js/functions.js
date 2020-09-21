@@ -56,9 +56,19 @@ el.css('color','red');
 $('minhatag').attr('meuattr','outrovalor');
 alert($('minhatag').attr('meuattr'));//função para pegar atributos*/
 
-var el = $('#source .texto').clone();
+
+//clone
+/*var el = $('#source .texto').clone();
 //$('#container').html(el.html());
 //el.appendTo('#container');
-$('#source .texto').appendTo('#container'); //para apenas mover sem clonar
+$('#source .texto').appendTo('#container'); //para apenas mover sem clonar*/
+
+$.ajax({
+    'url':'conteudo.html'
+    //'method':'post' <-  para back-end
+    //data:{'nome:fulano','idade':'25'} <-- para pegar do formulario 
+}).done(function(data){
+    console.log(data);
+});
 
 });

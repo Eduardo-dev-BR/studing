@@ -1,0 +1,24 @@
+Aula 6//
+
+• o N de number tem que ser maiusco e ficar verdinho
+
+• nas versões mais novas posso usar apenas o Number, deixando o int e o float para ocasiões onde é necessário especificar
+
+• conversao de numero para string -> String(n) ou n.toString('')
+
+• ctrl + L limpa a tela do terminal :D
+
+• template strings - usando ${} placeholder
+
+Ex: `O aluno ${nome} com ${idade} tirou a nota ${nota}`
+
+Nova maneira de concatenar mais facilmente.
+
+• s.lenght -> quantos caracteres tem
+• s.toUpperCase() -> tudo para maiusculas
+• s.toLowerCase() -> tudo para minusculas
+
+• document.write é para responder no documento como o escreva no visualg
+• document.writeln é como o escreval no visualg
+
+parei em 32:25

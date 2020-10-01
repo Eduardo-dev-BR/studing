@@ -1,4 +1,21 @@
-Aula 6//
+identificadores de variáveis
+1 - podem comecar com letra. $ ou _
+2 - não podem começar com numeros
+3 - é possivel usar letras ou números
+4 - é possivel usar simbulos
+5 - não podem conter espaços
+não podem ser palavras reservadas
+ 
+
+ .parseInt() <- inteiro
+ .parseFloat() <- real
+ Number <- O Javascript decide se é real ou inteiro
+
+ converter numero para string
+ string()
+ .toString()
+
+---------------Aula 6//
 
 • o N de number tem que ser maiusco e ficar verdinho
 
@@ -19,6 +36,18 @@ Nova maneira de concatenar mais facilmente.
 • s.toLowerCase() -> tudo para minusculas
 
 • document.write é para responder no documento como o escreva no visualg
-• document.writeln é como o escreval no visualg
 
-parei em 32:25
+formatando numeros
+> var n1 = 1545.5
+undefined
+> n1
+1545.5
+> n1.toFixed(2) //definir o numero de separadores decimais
+'1545.50'
+> n1.toFixed(2).replace('.',',') //definir decimais e substituir ponto por vírgula
+'1545,50'
+convertendo em moedas//
+> n1.toLocaleString('pt-BR', {style:'currency', currency: 'BRL'})
+'R$ 1,545.50'
+> n1.toLocaleString('pt-BR', {style:'currency', currency: 'USD'})
+'US$ 1,545.50'

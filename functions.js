@@ -1,53 +1,49 @@
-/*var el = $('<h3>Meu conteúdo</h3>').appendTo($('.box')).css('color','red'); //tem como aplicar o css fx direto na var
-//el.css('color.red'); <-- outra forma de usar 
 
-$('.box').prepend('<h3>Olá mundo!</h3>');
+window.onload = function(){
+    /*------------variaveis-------------
+    // var nome;
+    // var idade;
+    // nome = "Eduardo"; //string, number (inteiros ou reais), ou boolean
+    // idade = 24;
 
-var el = $('<h3>Meu Conteúdo</h3>').prependTo($('.box')).css('color', 'red'); //para aplicar antes do local sel.
+    var nome = "Eduardo", idade = 23;
+    
+    alert("Olá "+nome);
+    alert("Você tem "+idade+" anos");*/
 
-var t = '<p>Meu conteúdo após a div box</p>';
-$('box').after(t);
+    /*-------------arrays e objetos-------------
+    // var nome1 = "Eduardo", nome2 = "João", nome3 = "Maria";
 
-$('.box').before(t);
-// mesma coisa que usar o append ou prepend
-$(t).insertAfter($('.box')).css('color','red');
-$(t).insertBefore($('.box')).css('color','red');*/
+    // var nome = [];
+    // nome[0] = "Eduardo" //começa sempre a contar pelo 0
+    // nome[1] = "João"
+    // nome[3] = "Maria"
 
-//removendo coisas do site
-/*setTimeout(function(){
-    $('.box').remove(); //.eq = se eu tiver mais de um elemento igual, com o eq eu consigo pegar 1 apenas
-},3000);  //definindo quanto tempo vou esperar pra excluir com a funcção de js SetTimeOut*/
+    // console.log(nome[1]);
 
-//alterando display de um objeto
-/*$('div').css({"width":"50px","height":"50px","background-color":"green","display":"none"});
-    $('a').click(function(){
-        $('div').css('display','block');
-         return false;  //serve para não deixar a pagina atualizar após executar a funcao
-    })*/
+    var animal = {};
+    //objeto é aquilo que podemos definir as propriedades
 
-//funcao click e on(click) - a importancia do return false - invocando o link antes e depois
-    /* $('a').click(function(){
-        // alert('olá, mundo!');
-    })
+    // animal.nome = []; //pode ser um array 
+    // animal.peso = '24kg';
+    // animal.idade = 23;
+    // animal['idade'] = 24; //outra forma de declarar
 
-    $('body').on('click','a',function(){
-        alert('olá mundo!');
-        return false;
-    })
+    // animal.nome[0] = 'Juca';
+    // animal.nome[1] =  'Fifi';
 
-    $('body').html('<a href="">Meu Link!</a>');*/
+    console.log(animal.nome[1]);
 
-$(function(){
-    $('body').html('<form><input type="text"></input><input type="text"></input></form>');
+    console.log(typeof(animal)); //define qual o tipo se for objeto ou array ele irá retornar objeto
+    */
+    
+    /*-----------operações matematicas------------*/
+    //parecido com o visualg 
 
-    var func = function(){
-        //$(this).css('background','green'); //executa a ação no elemento que for selecionado.
-        $('input[type="text"]').eq($(this).index()).css('background','green'); 
-        //executa a ação com base no elemento equivalente ao index
-        console.log($(this).index()); //para retornar qual o elemento do tipo estamos selecionando.
-    }
+    // var idade = 2020-1996
+    // console.log(idade);
 
-    //$('input[type=text]').keyup(func);//quando soltar a tecla
-    $('input[type=text]').keydown(func);//quando pressionar a tecla
+    
 
-});
+}
+

@@ -1,4 +1,3 @@
-
 window.onload = function(){
     /*------------variaveis-------------
     // var nome;
@@ -13,7 +12,6 @@ window.onload = function(){
 
     /*-------------arrays e objetos-------------
     // var nome1 = "Eduardo", nome2 = "João", nome3 = "Maria";
-
     // var nome = [];
     // nome[0] = "Eduardo" //começa sempre a contar pelo 0
     // nome[1] = "João"
@@ -43,7 +41,13 @@ window.onload = function(){
     // var idade = 2020-1996
     // console.log(idade);
 
-    
+    var nome ='Eduardo';
+    // == 
+    if(nome == 'Eduardo'){
+        alert("Condição Verdadeira!");
+    }else{
+        alert("Condição Falsa");
+    }
 
 }
 

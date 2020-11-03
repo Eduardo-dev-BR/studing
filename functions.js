@@ -42,8 +42,66 @@ window.onload = function(){
 
     // var idade = 2020-1996
     // console.log(idade);
-
     
+    /*-------------condicionais e operadores----------*/
+    // = - recebe
+    // == - igual à
+    // === - identico à
+    // <, >, <=, >=
+    // != - diferente de
+    // !== diferente absolutamente de
+    
+    // var nome = 'Eduardo';
+    // if(nome == 'João'){
+    //     alert('Condição Verdadeira!');
+    // }else if(nome=='Eduardo'){
+    //     alert('Condição Verdadeira!');
+    // }else{
+    //     alert('Condição Falsa!');
+    // }
 
-}
+    // var idade ='2016-1993';
+    // if(idade > 23){
+    //     console.log("Eu tenho mais de 23 anos de idade!");
+    // }else if(idade < 10){
+    //     console.log("Menor do que 10!");
+    // }else if(idade < 5){
+    //     console.log("Menordo que 5!")
+    // }else{
+    //     console.log("Nenhuma das condições são verdadeiras!");
+    // }
 
+    // if(nome = 'Eduardo'){
+    //     console.log(nome);
+    // }
+
+    // var number = '23';
+    // if(number === 23){
+    //     console.log("verdade");
+    // }else{
+    //     console.log("falso")
+    // }
+
+    /*---------------Laços de Repetição--------------*/
+    
+    //while - enquanto
+    //----------declarar variavel antes---------
+
+    // var repeticao = 0;
+    // while(repeticao < 10){
+    //     console.log("Olá mundo número: "+repeticao);
+    //     repeticao+=1; //incremente um valor somando X (ou usar ++)
+
+    // }
+    // console.log("Cheguei até o final");
+
+    //for serve apenas para numero - é o para do visualg
+    // for(var numero = 0; numero < 10; numero+=1){
+    //     console.log("Olá mundo "+numero)
+    // }
+
+//     do{
+//         var nome = 'Eduardo';
+//         console.log("Olá mundo");
+//     }while(nome == 'Eduardo')
+// }

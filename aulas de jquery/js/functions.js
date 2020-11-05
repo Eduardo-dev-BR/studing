@@ -16,33 +16,89 @@ $(function(){
 
 /*----------|EVENTOS|----------*/
 
-    function validarCliqueHover(){
-    $('.artigo1').click(function(){
-        $('.artigo2').css('background-color','purple')
-    })
-    $('.artigo1').hover(function(){
-        $('.artigo2').css('background-color','red')
-    },function(){
-        $('.artigo2').css('background-color','') //deixar vazio para voltar a cor default
-    })
+    // function validarCliqueHover(){
+    // $('.artigo1').click(function(){
+    //     $('.artigo2').css('background-color','purple')
+    // })
+    // $('.artigo1').hover(function(){
+    //     $('.artigo2').css('background-color','red')
+    // },function(){
+    //     $('.artigo2').css('background-color','') //deixar vazio para voltar a cor default
+    // })
 
-    $('textarea').focus(function(){
-        console.log("Estou dentro do textarea");
-    })
+    // $('textarea').focus(function(){
+    //     console.log("Estou dentro do textarea");
+    // })
 
-    $('textarea').blur(function(){
-        console.log("Estou fora do textarea");
-    }) //blur é pra quando retira o foco do elemento
-    }
+    // $('textarea').blur(function(){
+    //     console.log("Estou fora do textarea");
+    // }) //blur é pra quando retira o foco do elemento
+    // }
 
-    function validarFormulario(){
-        $('select').change(function(){
-            console.log("Meu select foi alterado!")
-        })
-    }
+    // function validarFormulario(){
+    //     $('select').change(function(){
+    //         console.log("Meu select foi alterado!")
+    //     })
+    // }
 
-    validarCliqueHover();
-    validarFormulario();
+    // validarCliqueHover();
+    // validarFormulario();
+
+    //Eventos de redimensionamento---
+
+    // $(window).click(function(){ //mudei pra click pq o scroll do mouse ta quebrado kkk
+    //     console.log("Scroll ativo")
+    // })
+
+    //    $('a').click(function(e){
+    //        e.preventDefault();
+    //        return false; //faz a mesma coisa do preventDefault
+    //    }) //faz com que a ação padrão fique nula
+    
+    /*var timer;
+    $(window).resize(function(){ //pra quando redimensionamos a tela
+        // console.log("Minha tela esá sendo redimentsionada")
+        // setTimeout(function(){
+        //     location.href = "file:///C:/Users/Eduardo/Documents/GitHub/studing/aulas%20de%20jquery/index.html"
+        // },1000); //faz a pagina atualizar após um determinato tempo executando o evento
+
+        clearTimeout(timer); //usando uma variavel, ele limpa o evento durante a ação, e ao parar ele acontece (atualiza a pagina)
+        time = setTimeout(function(){
+            location.href = "file:///C:/Users/Eduardo/Documents/GitHub/studing/aulas%20de%20jquery/index.html"
+        },1000); //faz a pagina atualizar após um determinato tempo executando o evento
+    })*/
+
+    // $('.box').click(function(e){
+    //     e.stopPropagation(); //permite que o evento só o ocorra ao clicar fora do objeto
+    // })
+
+    // $('body').click(function(){
+    //     $('.box').css('opacity','0.1');
+    // })
+
+    /*--------------------------|Variáveis|----------------------------*/
+    
+    // var el = $('div.box'); //Maneira eficaz de manipular um objeto chamando o uma unica vez.
+    //     el.css('background-color',green);
+    //      function teste(){
+    //         el.css('color','red');
+    //      }
+    // teste();
+
+  /*------------|Dimensionando objetos Dinamicamente--------------*/
+    //funcao nativa:
+    // console.log($('.box').width());
+
+    // var elWidth = $('.box').width();
+    // $('.box').width('900'); //não usar em elementos onde também é utilizado padding
+
+    // $('.box').width();
+    // $('.box').css('width','900px');//forma mais comum de usar
+
+    // console.log($('.box').width());
+    // console.log("InnerWidth: "+$('.box').innerWidth()); //para setar a largura total, considerando paddings
+    // console.log("OuterWidth: "$('.box').outerWidth(true)); //para setar a largura total, considerando MARGINS, border e paddings
+    // Para a altura é a mesma coisa, usando Height
 
 
 });

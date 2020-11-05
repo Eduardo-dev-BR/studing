@@ -27,8 +27,11 @@ html, body{
 } */
 
 .box{
-    width: 500px;
-    /* padding: 20px; */
+    width: 100%;
+    padding: 30px;
     background-color: #ccc;
-    margin:30px;
+}
+
+h1.texto1{
+    color:red;
 }

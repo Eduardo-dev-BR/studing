@@ -100,5 +100,38 @@ $(function(){
     // console.log("OuterWidth: "$('.box').outerWidth(true)); //para setar a largura total, considerando MARGINS, border e paddings
     // Para a altura é a mesma coisa, usando Height
 
+  /*------------|Dimensionando textos Dinamicamente--------------*/
+    // var el = $('.box');
+    // el.html('<div class="texto1">Meu elemento!</div>');
+    // el.html(el.html()+'<h1 class="texto1">Meu texto html!</h1>'); //para adicionar sem reescrever
+    
+    // $('.box2').text("<div></div>"); //text não aceita html
+    // $('.box2').text($('.box2').text() + "Olá Mundo!");
+
+    // console.log($('.box2').text());
+
+    // $('input[type=text]').val('Olá mundo!'); //val é usado para itens de formulario
+    // $('textarea').text("Olá mundo")//o textarea funciona direto com o text
+
+    // $('input[type=button]').click(function(){
+
+    //     var str = $('input[type=text').val();
+    //     //coisas que fururamente vou usar para validar formulário
+
+    //     // console.log(v)
+    //     // var var2 = v.split("@"); //separa a split em array e separa nosssa string com base no delimitador
+    //     // console.log(var2);
+    //     // console.log(str.substr(1,4)); //substr recorta a nossa string
+
+    //     var splitstr = str.split("@");
+    //     if (splitstr[1] == 'hotmail.com'){
+    //         $('input[type=text]').css('opacity','0');
+    //     }else{
+    //         console.log("A condição não bateu");
+    //     }
+    // });
+
+  /*------------|Manipulando a posição no DOM|--------------*/
+
 
 });

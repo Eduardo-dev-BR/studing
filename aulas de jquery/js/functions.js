@@ -132,6 +132,47 @@ $(function(){
     // });
 
   /*------------|Manipulando a posição no DOM|--------------*/
+  //  $('.box div').eq(0).append('<h3>Meu elemento adicionado dinâmicamente</h3>');
+  //posso selecionar dentro de qual elemento - coloca no final do meu elemento -- .eq() seleciona qual elemento eu posso usar
 
+  //  var el = $('<h3>Meu conteudo</h3>').appendTo($('.box')).css('color','red'); //ou posso adc inline
+  //  el.css('color','red'); //para adc dinamicamente e manipular o css do objeto...
+
+  // $('.box').prepend('<h3>OIá mundo</h3>'); //adiconar antes do elemento
+  //  var el = $('<h3>Meu conteudo</h3>').prependTo($('.box')).css('color','red'); //ou posso adc inline
+
+  //after e before - adicionando depois do elemento dinamicamente
+  // var t = 'meu conteudo após a div box';
+  // $('.box div').after(t);
+  // $('.box div').before(t).css('color','red');
+  //para fazer igual o append e prepend usando after e begore
+  // var t = '<p>meu conteudo após a div box</p>'; //para funcionar tem que adc o conteudo como elemento
+  // $(t).insertAfter($('.box')).css('color','green'); //usando o before faz a mesma coisa só que depois
+
+  //removendo elementos da página
+
+  // setTimeout(function(){
+  //   $('.box').eq(1).remove(); //boa ideia pra fazer o meu slider!!!!
+  // },3000)
+
+  /*--------------------|Eventos dinâmicos e mais conceitos|-------------*/
+
+  // $('a').click(function(){
+  //   $('.teste').css('display','block');
+  //   // return false;
+  // })
+  
+  $('a').click(function(){
+    alert('Olá mundo!');
+  })
+
+  $('body').on('click','a',function(){  //adicionar para que o evento ocorra mesmo adc o elemento dinam. após o evento.
+    alert('Olá mundo')
+    return false;
+  })
+  setTimeout (function(){
+
+  },3000)
+  $('body').html('<a href="">Meu link!</a>');
 
 });

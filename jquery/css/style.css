@@ -36,3 +36,22 @@ h1.texto1{
     color:red;
 } */
 
+.box{
+    width: 100%;
+    padding: 40px 0;
+    background-color: rgh(210);
+    color: #000;
+    text-align: center;
+    padding: 3%;
+    transition: 1s;
+}
+
+.box2{
+    /* display: none; */
+    background-color: #000;
+    color: white;
+}
+
+.minhaclasse{
+    color:red;
+}

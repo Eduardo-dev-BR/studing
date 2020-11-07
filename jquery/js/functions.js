@@ -162,17 +162,119 @@ $(function(){
   //   // return false;
   // })
   
-  $('a').click(function(){
-    alert('Olá mundo!');
-  })
+  // $('a').click(function(){
+  //   alert('Olá mundo!');
+  // })
 
-  $('body').on('click','a',function(){  //adicionar para que o evento ocorra mesmo adc o elemento dinam. após o evento.
-    alert('Olá mundo')
-    return false;
-  })
-  setTimeout (function(){
+  // $('body').on('click','a',function(){  //adicionar para que o evento ocorra mesmo adc o elemento dinam. após o evento.
+  //   alert('Olá mundo')
+  //   return false;
+  // })
+  // setTimeout (function(){
+  //   $('body').html('<a href="">Meu link!</a>');
 
-  },3000)
-  $('body').html('<a href="">Meu link!</a>');
+  // },3000)
+    // var func = function(){
+      // $(this).css('background-color','green'); //this - faz referencia ao elemento à ser modificado
+      // $('input[type=text').eq($(this).css('background','green')); //outra forma de fazer
+      // console.log($(this).index());
+    // }
+  // $('input[type=text]').keyup(func); // keyup - quando soltar a tecla - keydown quando pressionada a tecla
+
+  /*----------------|Formulario com Jquery|-------------------*/
+    
+  // $('.form_contato').submit(function(){
+
+  //   var container = $('.container');
+  //   var content = 'Nome: ' + $('input[name=nome]').val()+
+  //   '<hr>email: ' + $('input[name=email]').val()+
+  //   '<hr>Telefone' + $('input[name=telefone]').val();
+    
+  //   container.html(content); //val - a gente pega tudo que tem dentro do text;
+
+
+  //     return false; //para a pagina nao atualizar
+  //   })
+
+  /*----------------|**Efeitos e animações**|-------------------*/
+
+
+  // $('.box').fadeOut(2000,function(){
+  //   $('.box2').fadeIn(3000,function(){
+  //     console.log("terminamos a animação")
+  //   })
+  // });//para sumir 
+
+    // $('.box').click(function(){
+    //   $('.box2').slideToggle(1000,function(){
+    //     alert("deu bom");
+    //   });
+    // });
+
+    /*----------------|**Animate, interval e Timeout**|-------------------*/
+
+    // var timer;
+    // var timeOut = function(){
+    //   $('.box2').animate({
+    //     'width':'40%',
+    //     'heigth':'500px',
+    //     'marginLeft':'100px',
+    //     'padding-top':'20px'
+    //   },2000);
+    //  }
+
+    //  $('.botao').click(function(){
+    //    alert("Animação com timeout foi cancelada!");
+    //    clearTimeout(timer); //para parar o timeout
+    //  })
+
+
+    // $('.box1').animate({
+    //   'width':'40%',
+    //   'heigth':'500px',
+    //   'marginLeft':'100px', //para usar atributos de 2 nomes
+    //   'padding-top':'20px'
+    // },2000,function(){
+    //   setTimeout(timeOut,10000);
+    //   // console.log("terminamos a animação");
+    // }); 
+
+    // var timer;
+
+    // $('.botao').click(function(){
+    //     console.log("intervalo cancelado");
+    //    clearInterval(timer);
+    // })
+
+    // timer = setInterval(function(){ //a cada X segundos executa uma função
+    //   alert("olá mundo");
+    // },3000);
+    // Usado para chat de mensagens para fazer verificações de mensagens e etc.. 
+
+    /*----------------|**Manipulando Classes dinamicamente**|-------------------*/
+    // $('.box1').addClass('minhaclasse'); //muito legal para fazer transições
+    // $('.box1').removeClass('minhaclasse');
+
+    // // $('.box1 > .child1 > .child2').css('color','red'); //forma convencional css
+    // var el = $('.box1').find('.child1').find('.child2').css('color','green')//para aplicar em uma classe especifica
+    // el.css('color','blue'); //mais organizado
+
+    // $('minhatag').attr('meuattr','outrovalor');
+    // alert($('minhatag').attr('meuattr')) //invocando tag e atributos personalizados
+
+    /*----------------|**Clonar e Mover objetos**|-------------------*/
+    // var el = $('#source .texto').clone();
+    // $('.container').html(el.html()); //clona dentro da tag
+    
+    // $('#source .texto').appendTo('.container'); //para mover para a tag sem clonar
+
+    /*---------------|O que é Ajax|-----------------------*/
+    $.ajax({
+      url:'https://studing/jquery/conteudo.html',
+    }).done(function(data){
+      console.log(data);
+      // $('#container').append(data);
+    });
+
 
 });

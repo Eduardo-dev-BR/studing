@@ -269,12 +269,19 @@ $(function(){
     // $('#source .texto').appendTo('.container'); //para mover para a tag sem clonar
 
     /*---------------|O que é Ajax|-----------------------*/
-    $.ajax({
-      url:'https://studing/jquery/conteudo.html',
-    }).done(function(data){
-      console.log(data);
-      // $('#container').append(data);
-    });
+    // $('body').html('<a href="conteudo.html">Olá mundo</a>')
+
+    // $.ajax({
+    //   'url':'conteudo.html',
+    //   // 'method':'post'
+    //   //data:{'mome':'Eduardo','idade}:'24'}
+      
+    // }).done(function(data){
+    //     //console.log(data);
+    //     $('#container').append(data);
+    // });
+
+    // //Deu um erro pois o cors está bloqueando o acesso. Preciso descobrir como solucionar isso.
 
 
 });

@@ -3,14 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Conhecendo o Dom</title>
+    <style>
+        body{
+            color: #ccc;
+            background-color: rgba(0,0,0,0.8);
+            font: normal 18pt arial;
+        }
+
+        
+
+    </style>
 </head>
-<body>
-    
+<body>  
+    <h1>Iniciando estudos com o DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em Javascript</p>
+    <div id ="msg">Clique em mim</div>
 
     <script>
         /* -----------Conhecendo o DOM - Docoment Object Model --------------- */
+        // Instalação de programas : Visual Studio = Live Server (Atualiza mods em tempo reaL)
+        // O que é DOM: Um conjunto de Objetos dentro do navegador que vai dar acesso aos arquivos internos do site
+
+        //Árvore DOM
+        // window: location, document , history (são parents)
+        // document : html -> head (meta, title) e body (h1, p , p (strong), div)
+        // window.document.write(window.document.URL)
+
+        //métodos de acesso de elementos:
+        // por Marca (getElementsByTagName)
+        // por ID (getElementsByID)
+        // por Nome (getElementsByName)
+        // por Classe (getElementsByClassName)
+        // por Seletor
+
+        /* examples */
+        //var p1 = document.getElementsByTagName('p')[1]
+        //var corpo = window.document.body
+        //document.write("Está escrito assim: "+p1.innerText)
+        //p1.style.color = 'blue'
+        //corpo.style.background = 'black'
+        //window.alert(p1.innerText)
+
         
+
 
 
     </script>

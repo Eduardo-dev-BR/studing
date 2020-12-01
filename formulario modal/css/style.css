@@ -77,3 +77,19 @@ html,body{
     border: none;
     margin-top: 20px;
 }
+
+.closeBtn {
+    width: 30px;
+    height: 30px;
+    background-color: rgb(255,255,255);
+    border: 1px solid #ccc;
+    color: #555;
+    position: absolute;
+    top: -16px;
+    right: -16px;
+    text-align: center;
+    line-height: 28px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 900;
+}

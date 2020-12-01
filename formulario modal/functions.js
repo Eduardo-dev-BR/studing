@@ -1,7 +1,31 @@
 
 $(function(){
   
-    /*---------------|Expressões regulares|-----------------*/
+    /*---------------|Criando janela modal e formulário|-----------------------*/
+
+    abrirJanela();
+    verificarCliqueFechar();
+  
+    function abrirJanela(){
+        $('.btn').click(function(e){
+          e.stopPropagation();
+            $('.bg').fadeIn();
+        });
+    }
+    
+    function verificarCliqueFechar(){
+      var el = $('body, .closeBtn')
+      el.click(function(){
+        $('.bg').fadeOut();
+      })
+    }
+
+    var but = $('.closeBtn')
+    but.hover(function(){
+      $('.closeBtn').css('background','darkgray')
+    })
+
+      /*---------------|Expressões regulares|-----------------*/
     // var frase = 'Olá mundo';
     // var verifica = frase.match(/Olá/); //parametros case sensitive - descrever exatamente como é
 
@@ -30,72 +54,11 @@ $(function(){
       // console.log("Não encontramos nada")
     // }
 
-    /*---------------|Criando janela modal e formulário|-----------------------*/
 
-//     abrirJanela();
-//     verificarCliqueFechar();
-
-//     function abrirJanela(){
-//       $('.btn').click(function(e){
-//         e.stopPropagation();
-//         $('.bg').fadeIn();
-//       });
-//     }
-
-//     function verificarCliqueFechar(){
-
-//       var el = $('body,.closeBtn');
-
-//       el.click(function(){
-//         $('.bg').fadeOut();
-//     })
-
-//     $('.form').click(function(e){
-//       e.stopPropagation();
-//     })
-
-//   }
 // /*---------------|Validando formulário na prática|-----------------------*/
-// $('form#form1').submit(function(e){
-//   e.preventDefault();
-//   var nome = $('input[name=nome').val();
-//   var telefone = $('input[name=telefone').val();
-//   var email = $('input[name=email').val();
 
-//   var amount = nome.split(' ').length ; //contando a quantidade de espaços e os respectivos valores
-//   var splitStr = nome.split(' ');
-//   if(amount >= 2){
-//     for(var i = 0; i < amount; i++){
-//       // console.log(splitStr[i]);
-//       if(splitStr[i].match(/^[A-Z{1}[a-z]{1,}$/)){
-//         // console.log("Cadastrado com sucesso")
-//       }else{
-//         $('input[name=nome]').css('border','2px solid red');
-//         return false;
-//       }
-//     }
-//   }else{
-//     aplicarCampoInvalido$(('input[name=nome]'));
-//     return false;
-//   }
-//   return false;
-//   //Se chegou até o final é porque está tudo okay
-// })
-
-// function aplicarCampoInvalido(el){
-//   el.css('border','2px solid red');
-//   el.data('invalido','true');
-// }
          
-  abrirJanela();
-
-  function abrirJanela(){
-      $('.btn').click(function(){
-          $('.bg').fadeIn();
-      });
-  }
-  
-  
 
 
 });
+

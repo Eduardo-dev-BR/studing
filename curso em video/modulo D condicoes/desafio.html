@@ -3,26 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DETRAN</title>
+    <title>Country</title>
 </head>
 <body>
-    <h1>Sistema de Multas</h1>
-    Qual é o seu país?<input type="text" name="naci" id="naci">
-    <input type="button" value="Verificar" onclick="verNacionalidade()">
-    <div id="res">
 
-    </div>
+    <h1>Country</h1>
+    What's your country? <input type="text" name="pais" id="pais" />
+    <input type="button" value="Verify" onclick="verNac()" />
+    <div id="res"></div>
     <script>
-        function verNacionalidade(){
-            var naci = window.document.querySelector('input#naci')
+        function verNac(){
+            var nac = window.document.querySelector('input#pais')
             var res = window.document.querySelector('div#res')
-                console.log(naci.value)
-                
-                if (naci == 'Brasil'){
-                    res.innerHTML += `<p>Você é <strong style="color:red">Brasileiro!</strong>`
-                }else{
-                    res.innerHTML += `<p>Você é <strong style="color:red">Estrangeiro!</strong>`
-                }
+
+            if(nac == 'Brasil'){
+                res.innerHTML += '<p>Brazilian!</p>'
+            }else{
+                res.innerHTML += '<p>Stranger</p>'
+            }
         }
 
     </script>

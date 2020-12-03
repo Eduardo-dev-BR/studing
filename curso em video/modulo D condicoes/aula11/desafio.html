@@ -15,8 +15,9 @@
         function verNac(){
             var nac = window.document.querySelector('input#pais')
             var res = window.document.querySelector('div#res')
+            var val = String(pais.value) //faltava converter como string
 
-            if(nac == 'Brasil'){
+            if(val == 'Brasil' || val == 'brasil'){
                 res.innerHTML += '<p>Brazilian!</p>'
             }else{
                 res.innerHTML += '<p>Stranger</p>'

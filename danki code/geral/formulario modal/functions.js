@@ -100,7 +100,7 @@ $(function(){
 			return false;
 		}
 
-		if(telefone.match(/^\([0-9]{2}\)[0-9]{4}-[0-9]{4}$/) == null){
+		if(telefone.match(/^[0-9]{11}$/) == null){
 			return false;
 		}
 

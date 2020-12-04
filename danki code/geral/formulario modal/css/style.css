@@ -20,7 +20,7 @@ html,body{
     height: 100px;
     color: white;
     font-size: 24px;
-    text-transform: uppercase;
+    
     line-height: 100px;
     text-align: center;
     background-color: #69a4d3;
@@ -64,6 +64,7 @@ html,body{
     border: 1px solid gray;
     border-radius: 20px;
     margin-bottom: 30px;
+    color: #ccc;
 }
 
 .form input[type=text]:focus{

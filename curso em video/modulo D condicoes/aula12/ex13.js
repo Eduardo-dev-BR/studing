@@ -19,10 +19,11 @@
 
 // }
 
-//o brake é obrigatório para nao gerar um loop infinito
+//o brake é obrigatório
 
 var agora = new Date()
 var diaSem = agora.getDay()
+
 /*
     0-Domingo
     1-Seg
@@ -57,4 +58,6 @@ switch(diaSem){
     case 6:
         console.log('Sabado')
         break
+    default:
+        console.log('[Erro] Dia da semana inválido')
 }

@@ -19,11 +19,48 @@
         section{
             background: white;
             border-radius: 20px;
+            font-size: 15px;
             padding: 15px;
-            width: 500px;
+            width: 400px;
             margin: auto;
             box-shadow: rgba(0, 0, 0, 0.66) 3px 3px 10px;
 
+        }
+        
+        section input[type=button]{
+            background-color: rgb(80, 165, 255);
+            width: 100px;
+            padding: 8px 0;
+            border: none;
+            color: white;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            border-radius: 15px;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: 0.3s;
+            cursor: pointer;
+        }
+
+        section input[type=button]:hover{
+            background-color: rgb(35, 118, 243);
+        }
+
+        section input[type=button]:focus{
+            outline: none;
+        }
+
+        #res{
+            padding-top: 15px;
+            padding-bottom: 10px;
+            font-size: 15px;
+            text-align: center;
+            font-style: italic;
+            color: rgb(85, 85, 85);
+        }
+
+        img#foto{
+            margin: 0 auto;
+            display: block;
         }
 
         footer{
@@ -62,7 +99,7 @@
 
                 <!-- names iguais para que não possibilite marcar as 2 oções juntas-->
             </p>
-            <p>
+            <p class="button">
                 <input type="button" value="verificar" onclick="verificar()">
             </p>
         </div>
@@ -72,7 +109,7 @@
     </section>
 
     <footer>
-        <p href="#">&copy CursoemVideo</p>
+        <p href="#">&copy Edu</p>
     </footer>
 
     <script src="script.js"></script>

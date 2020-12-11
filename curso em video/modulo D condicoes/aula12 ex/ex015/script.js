@@ -52,5 +52,3 @@ function verificar(){
                 res.after(img)
     }
 }
-
-    //parei em 13:20

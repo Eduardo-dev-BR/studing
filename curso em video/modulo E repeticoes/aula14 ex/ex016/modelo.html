@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicio</title>
+
+    <style>
+        body{
+            background: rgb(70, 133, 228);
+            font: normal 15pt Arial;
+        }
+
+        header{
+            color:white;
+            text-align: center;
+        }
+        
+        section{
+            background: white;
+            border-radius: 20px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.66) 3px 3px 10px;
+
+        }
+
+        footer{
+            color:white;
+            text-align: center;
+            font-style: italic;
+        }
+
+        footer > p{
+            cursor: pointer;
+        }
+
+        footer > p:hover {
+            transition: 0.2s;
+            color: rgb(174, 216, 255);
+        }
+
+        .controle{
+            font-size: 14px;
+            text-align: center;
+        }
+
+        .controle p{
+            display: inline-block;
+        }
+
+        .controle input[type=number]{
+            width: 50px;
+        }
+
+        .controle input[type=button]{
+            font-size: 10px;
+            font-weight: bolder;
+            text-transform: uppercase;
+            color: white;
+            background-color: rgb(70, 133, 228);
+            margin-left: 15px;
+            border-radius: 15px;
+            border: 0;
+            padding: 8px 15px;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+
+        .controle input[type=button]:hover{
+            background-color: rgb(13, 101, 182);
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Título</h1>
+    </header>
+
+    <section>
+        <div class="controle">
+            <p>Contar números até:</p>
+            <input type="number" name="numEsc" id="numEsc">
+            <input type="button" value="começar" onclick="contagem()">
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+
+    <footer>
+        <p href="#">&copy CursoemVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

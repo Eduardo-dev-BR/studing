@@ -41,35 +41,42 @@
             color: rgb(174, 216, 255);
         }
 
-        .controle{
-            font-size: 14px;
-            text-align: center;
+        .contador{
+            font-size: 15px;
         }
 
-        .controle p{
+        .contador p{
+            width: 70px;
+            padding-right: 10px;
             display: inline-block;
+            text-align: right;
         }
 
-        .controle input[type=number]{
+        .contador input[type=number]{
+            height: 25px;
             width: 50px;
-        }
-
-        .controle input[type=button]{
-            font-size: 10px;
-            font-weight: bolder;
-            text-transform: uppercase;
-            color: white;
-            background-color: rgb(70, 133, 228);
-            margin-left: 15px;
+            border: 1px solid #ccc;
             border-radius: 15px;
-            border: 0;
-            padding: 8px 15px;
-            transition: 0.2s;
-            cursor: pointer;
         }
 
-        .controle input[type=button]:hover{
-            background-color: rgb(13, 101, 182);
+        .contador input[type=button]{
+            margin-top: 5px;
+            margin-left: 67px;
+            cursor: pointer;
+            width: 70px;
+            height: 30px;
+            border-radius: 14px;
+            border: none;
+            font-size: 11px;
+            text-transform: uppercase;
+            font-weight: bold;
+            color: #fff;
+            background-color: rgb(1, 164, 240);
+        }
+
+        #res{
+            font-size: 16px;
+            margin: 30px 20px;
         }
     </style>
 
@@ -80,13 +87,14 @@
     </header>
 
     <section>
-        <div class="controle">
-            <p>Contar números até:</p>
-            <input type="number" name="numEsc" id="numEsc">
-            <input type="button" value="começar" onclick="contagem()">
+        <div class="contador" id="contador">
+            <div><p>Inicio:</p><input type="number" name="txti" id="txti" /></div>
+            <div><p>Fim:</p><input type="number" name="txtf" id="txtf" /></div>
+            <div><p>Passo:</p><input type="number" name="txtp" id="txtp" /></div>
+            <input type="button" value="contar" onclick="contar()" />
         </div>
         <div id="res">
-            
+            Preparando para contar...
         </div>
     </section>
 

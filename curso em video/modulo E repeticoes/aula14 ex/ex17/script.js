@@ -1,16 +1,20 @@
 function tabuada(){
 
-    let ini = document.querySelector('#txti')
-    let res = document.querySelector('#res')
+    let num = document.querySelector('#txtn')
+    let tab = document.querySelector('#seltab')
+    let n = Number(num.value)
 
-    if(ini.value == 0){
-        alert('[Erro] Insira um número válido')
+    if(num.value.length == "0"){
+        window.alert('Por favor, digite um número!')
     } else {
-        let tabu = document.querySelector('#tab')
-        let i = Number(ini.value)
-
+        let n = Number(num.value)
+        tab.innerHTML = "" //para limpar a area da tabuada antes de colocar uma nova
         
-
+        for(let c = 1;c <= 10; c++){
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            item.value = `tab${c}`
+            tab.appendChild(item)
+        }
     }
-
 }

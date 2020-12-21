@@ -1,0 +1,9 @@
+    // array, vetor ou váriavel composta - tem seus elementos e cada elemento é composto por seu valor, e 1 chave de identificação
+
+    // var num = [5, 4 , 8]
+ para acrescentar posição num[3] = 6
+ para acresentar valores - num.push(7)
+ para saber o comprimento - num.length                 //sem parenteses pq é um atributo
+ num.sort() - organiza os elementos em ordem crescente
+
+

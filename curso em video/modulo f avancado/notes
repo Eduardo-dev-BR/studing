@@ -6,4 +6,6 @@
  para saber o comprimento - num.length                 //sem parenteses pq é um atributo
  num.sort() - organiza os elementos em ordem crescente
 
+------------
+
 

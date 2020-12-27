@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Exercicio</title>
+
+    <style>
+        body{
+            background: rgb(70, 133, 228);
+            font: normal 15pt Arial;
+        }
+
+        header{
+            color:white;
+            text-align: center;
+        }
+        
+        section{
+            background: white;
+            border-radius: 20px;
+            padding: 15px;
+            width: 500px;
+            margin: auto;
+            box-shadow: rgba(0, 0, 0, 0.66) 3px 3px 10px;
+
+        }
+
+        #flista{
+            width: 200px;
+            padding: 8px;
+            border: none;
+            outline: 1px solid rgb(120, 120, 120);
+            margin: 10px 0 15px 0;
+        }
+
+        footer{
+            color:white;
+            text-align: center;
+            font-style: italic;
+        }
+
+        footer > p{
+            cursor: pointer;
+        }
+
+        footer > p:hover {
+            transition: 0.2s;
+            color: rgb(174, 216, 255);
+        }
+
+        .btn{
+            background-color:rgb(70, 133, 228);
+            border-radius: 5px;
+            height: 25px;
+            border: none;
+            color: #fff;
+        }
+
+        #res{
+            margin-top: 25px;
+            font-size: 17px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+
+    <section>
+        <div>
+            Número entre (1 e 100):
+            <input type="number" id="fnum" />
+            <input type="button" value="Adicionar" class="btn" onclick="adicionar()" />
+            <br><br><select name="flista" id="flista" size="6"><option>Selecionar</option></select>
+            <br><input type="button" class="btn" value="Finalizar" onclick="finalizar()" />
+        </div>
+        <div id="res">
+            
+        </div>
+    </section>
+
+    <footer>
+        <p href="#">&copy CursoemVideo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

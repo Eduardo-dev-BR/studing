@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Container</title>
+    <style type="text/css">
+
+        #conteudo{
+            background: #dcdcdc;
+            height: 400px;
+            display: flex; /*ja muda para inline*/
+            /* -- flex direction: row | row-reverse | column | column-reverse - flutuação*/
+            flex-direction: row;
+            /*nowrap | wrap | wrap-reverse - metodo de quebra*/
+            flex-wrap: wrap;
+            /* flex-start | flex-end | center | space-between
+            | space-around (nao cola nas laterais) - ajuste dos items */
+            justify-content: space-around;
+            /* stretch (preenche para ajustar)
+            | center (centraliza com medida padrão)
+            | flex-start (centraliza pelo topo)
+            | flex-end (centraliza pela base)
+            | baseline (centraliza pela linha de base do texto) - metodo do ajuste */
+            align-items: baseline;
+        }
+
+        .item{
+            width: 100px;
+            height: 100px;
+            margin: 10px;
+            background: white;
+            border: 1px solid gray;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+    <div id="conteudo">
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+    </div>
+</body>
+</html>
